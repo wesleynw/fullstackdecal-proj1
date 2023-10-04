@@ -12,12 +12,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let nameElem = document.getElementById("name-box");
 
 function updateHeader() {
-    let topOfSubtitle = document.getElementById("name-box").offsetTop;
+    let topOfSubtitle = document.getElementById("name-placeholder").offsetTop;
 
     scrollpos = window.scrollY;
     let className = "";
+    nameElem.classList.remove("fixed");
     nameElem.classList.remove("header-bg-night");
     nameElem.classList.remove("header-bg");
+
     if (nightModeActivated == true) {
         className = "header-bg-night";
     } else {
@@ -26,7 +28,9 @@ function updateHeader() {
 
     if (scrollpos >= topOfSubtitle) {
         nameElem.classList.add(className)
+        nameElem.classList.add("fixed");
     }
+
 }
 
 window.addEventListener('scroll', updateHeader)

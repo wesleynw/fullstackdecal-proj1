@@ -28,6 +28,8 @@ body {
     justify-content: center;
 
     font-family: "Tiempos Headline";
+
+    transition: all 0.15s;
 }
 
 #night-mode-container {
@@ -46,11 +48,21 @@ body {
     color: rgb(162, 105, 0);
 }
 
+#landing {
+    /* position: absolute; */
+    height: 100vh;
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #pfp {
     border-radius: 50%;
     width: 200px;
     transition: transform .1s ease-in-out;
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
 
 #pfp:hover {
@@ -150,6 +162,13 @@ a:hover {
     margin: auto;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+}
+
+.fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 
