@@ -8,27 +8,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-let topOfSubtitle = document.getElementById("name-box").offsetTop;
+// let topOfSubtitle = document.getElementById("name-box").offsetTop;
 let nameElem = document.getElementById("name-box");
-// var topofsubtitle = $("#header-container").offset().top; //gets offset of header
-// var height = $("#header-container").outerHeight(); //gets height of header
-
-// window.onscroll(function(){
-//     if(window.scrollTop() > (topOfSubtitle)){
-//    nameElem.classList.add("header-bg")
-//     }
-//     else{
-//     }
-// });
-
-// window.onscroll = function() {
-
-// }
 
 function updateHeader() {
+    let topOfSubtitle = document.getElementById("name-box").offsetTop;
+
     scrollpos = window.scrollY;
     let className = "";
-    if (nightModeActivated) {
+    nameElem.classList.remove("header-bg-night");
+    nameElem.classList.remove("header-bg");
+    if (nightModeActivated == true) {
         className = "header-bg-night";
     } else {
         className = "header-bg";
@@ -37,10 +27,6 @@ function updateHeader() {
     if (scrollpos >= topOfSubtitle) {
         nameElem.classList.add(className)
     }
-    else { 
-        nameElem.classList.remove("header-bg-night");
-        nameElem.classList.remove("header-bg");
-     }
 }
 
 window.addEventListener('scroll', updateHeader)
