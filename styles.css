@@ -23,6 +23,9 @@ body {
     /* background-color: rgb(253, 206, 120); */
     background-color: #fccd76;
     background-image: url("./topography.svg");
+    /* background-image: url(./a.jpg); */
+    /* background-image: url(./VHS\ Thumbnail.jpg); */
+    /* background-size: contain; */
     /* fill-opacity: 40%; */
     /* fill: #fbecd0; */
     /* opacity: 0.5; */
@@ -40,7 +43,7 @@ body {
 }
 
 #night-mode-container {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 5;
@@ -51,8 +54,14 @@ body {
     user-select: none;
 }
 
+#night-mode-container:hover {
+    /* box-shadow: 1px 1px 4px 3px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 #night-mode-button {
     color: rgb(162, 105, 0);
+    text-decoration: none;
 }
 
 #landing {
@@ -70,6 +79,9 @@ body {
     width: 200px;
     transition: transform .1s ease-in-out;
     margin-bottom: 20px;
+    border-color: #7b5000;
+    border-width: 2px;
+    border-style: outset;
 }
 
 #pfp:hover {
@@ -77,10 +89,8 @@ body {
 
 }
 
-h1,
-h2,
-h3 {
-    cursor: default;
+#name-text:hover {
+    text-decoration: underline;
 }
 
 a {
@@ -97,6 +107,7 @@ h1 {
     transition: color, 0.3s;
     text-decoration: none;
     color: inherit;
+    display: inline-block;
 }
 
 #picker a {
