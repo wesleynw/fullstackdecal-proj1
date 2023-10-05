@@ -58,3 +58,19 @@ function nightModeToggle() {
   }
   updateHeader();
 }
+
+let activatePic = "";
+
+let greyscreen = document.getElementById("greyscreen");
+let e2eeImg = document.getElementById("e2ee-img");
+e2eeImg.addEventListener("click", () => {
+  greyscreen.style.display = "inline-block";
+  e2eeImg.classList.add("project-picture-zoomed");
+  body.style.overflow = "hidden";
+});
+
+greyscreen.addEventListener("click", () => {
+  greyscreen.style.display = "none";
+  e2eeImg.classList.remove("project-picture-zoomed");
+  body.style.overflow = "visible";
+});
