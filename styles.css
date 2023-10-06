@@ -74,7 +74,7 @@ body {
 }
 
 .vertical-fb {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 
@@ -252,6 +252,15 @@ h2:hover {
 @media screen and (max-width: 600px) {
     .vertical-fb {
         align-items: center;
+    }
+
+    #link-box {
+        width: 50vw;
+        flex-flow: row;
+        align-items: center;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        /* align-items: center; */
     }
 
     #landing {
