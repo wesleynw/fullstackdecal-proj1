@@ -8,30 +8,30 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-let nameElem = document.getElementById("name-box");
+// let nameElem = document.getElementById("name-box");
 
-function updateHeader() {
-  let topOfSubtitle = document.getElementById("name-placeholder").offsetTop;
+// function updateHeader() {
+//   let topOfSubtitle = document.getElementById("name-placeholder").offsetTop;
 
-  scrollpos = window.scrollY;
-  let className = "";
-  nameElem.classList.remove("fixed");
-  nameElem.classList.remove("header-bg-night");
-  nameElem.classList.remove("header-bg");
+//   scrollpos = window.scrollY;
+//   let className = "";
+//   nameElem.classList.remove("fixed");
+//   nameElem.classList.remove("header-bg-night");
+//   nameElem.classList.remove("header-bg");
 
-  if (nightModeActivated == true) {
-    className = "header-bg-night";
-  } else {
-    className = "header-bg";
-  }
+//   if (nightModeActivated == true) {
+//     className = "header-bg-night";
+//   } else {
+//     className = "header-bg";
+//   }
 
-  if (scrollpos >= topOfSubtitle) {
-    nameElem.classList.add(className);
-    nameElem.classList.add("fixed");
-  }
-}
+//   if (scrollpos >= topOfSubtitle) {
+//     nameElem.classList.add(className);
+//     nameElem.classList.add("fixed");
+//   }
+// }
 
-window.addEventListener("scroll", updateHeader);
+// window.addEventListener("scroll", updateHeader);
 
 let nightModeActivated = false;
 
@@ -56,7 +56,7 @@ function nightModeToggle() {
 
     nightModeActivated = false;
   }
-  updateHeader();
+  // updateHeader();
 }
 
 let activatePic = "";

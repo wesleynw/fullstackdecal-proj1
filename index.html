@@ -1,89 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <link rel="stylesheet" href="./styles.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wesley Weisenberger</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- visitor counter: {{views}} -->
+    <div id="night-mode-container">
+      <a id="night-mode-button">night mode 🌗</a>
+    </div>
 
     <div id="greyscreen"></div>
 
     <div id="landing">
-        <div id="night-mode-container">
-            <a id="night-mode-button">night mode 🌗</a>
-        </div>
-
-        <div id="landing-top-padding"></div>
-
+      <div class="vertical-fb">
         <img src="./pfp.jpg" id="pfp" />
 
-
         <div id="name-placeholder"></div>
-        <div id="name-box"><a href="#landing" id="name">
-                <h1 id="name-text">Wesley Weisenberger</h1>
-            </a></div>
-        <h2 id="frontpage-subtitle">Computer Science @ UC Berkeley</h2>
 
-        <div id="picker">
+        <div id="name-box">
+          <a href="#landing" id="name">
+            <h1 id="name-text">Wesley Weisenberger</h1>
+          </a>
+        </div>
+
+        <h2 id="frontpage-subtitle">Computer Science @ UC Berkeley</h2>
+      </div>
+
+      <div class="vertical-fb" style="text-align: right">
+        <h2>
+          <a
+            href="./Wesley_Weisenberger_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="external-link"
+          >
+            resume
+          </a>
+          <img src="./arrow-up.svg" class="arrow" />
+        </h2>
+        <h2>
+          <a
+            href="https://github.com/wesleynw/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="external-link"
+            >github</a
+          >
+          <img src="./arrow-up.svg" class="arrow" />
+        </h2>
+        <h2>
+          <a
+            href="https://www.linkedin.com/in/wesleynw/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="external-link"
+            >linkedin</a
+          >
+          <img src="./arrow-up.svg" class="arrow" />
+        </h2>
+
+        <div style="height: 40px"></div>
+
+        <h2>
+          <a href="#about-me" class="internal-link">about me</a>
+          <img src="./arrow-down.svg" class="arrow" />
+        </h2>
+        <h2>
+          <a href="#projects" class="internal-link">projects</a>
+          <img src="./arrow-down.svg" class="arrow" />
+        </h2>
+        <h2>
+          <a href="contact-me" class="internal-link">contact me</a>
+          <img src="./arrow-down.svg" class="arrow" />
+        </h2>
+      </div>
+
+      <!-- <div id="picker">
             <a href="./Wesley_Weisenberger_resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
             <a href="https://github.com/wesleynw/" target="_blank" rel="noopener noreferrer">github</a>
             <a href="https://www.linkedin.com/in/wesleynw/" target="_blank" rel="noopener noreferrer">linkedin</a>
-        </div>
-
+        </div> -->
     </div>
 
     <div class="content-container">
-        <h1>about me</h1>
-        <h2 class="project-description">
-            Hello! I'm a fourth year student studying computer science and data science at UC Berkeley. My
-            projects range from websites like this to <a href="https://en.wikipedia.org/wiki/End-to-end_encryption"
-                target="_blank" rel="noopener noreferrer">E2EE</a> file sharing systems, to Discord bots. I'm current on
-            the search for a software engineering position after graduation.
+      <h1 id="about-me">about me</h1>
+      <h2 class="project-description">
+        Hello! I'm a fourth year student studying computer science and data
+        science at UC Berkeley. My projects range from websites like this to
+        <a
+          href="https://en.wikipedia.org/wiki/End-to-end_encryption"
+          target="_blank"
+          rel="noopener noreferrer"
+          >E2EE</a
+        >
+        file sharing systems, to Discord bots. I'm current on the search for a
+        software engineering position after graduation.
+      </h2>
+    </div>
+
+    <div class="content-container">
+      <h1 id="projects">projects</h1>
+      <h2 style="margin-left: auto">End To End Encrypted File System</h2>
+
+      <div class="project">
+        <!-- <div class="project-picture" style="height: 30vw;top: 0px; left: 0px;"></div> -->
+        <img id="e2ee-img" class="project-picture" src="./b.png" />
+        <h2 class="content project-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </h2>
-    </div>
-
-    <div class="content-container">
-        <h1>projects</h1>
-        <h2 style="margin-left: auto">End To End Encrypted File System</h2>
-
-        <div class="project">
-            <!-- <div class="project-picture" style="height: 30vw;top: 0px; left: 0px;"></div> -->
-            <img id="e2ee-img" class=project-picture src="./b.png" />
-            <h2 class="content project-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.
-            </h2>
-        </div>
+      </div>
     </div>
     <div class="content-container">
-        <h2 class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
-        </h2>
+      <h2 class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </h2>
     </div>
-    <div class="content">
-
-    </div>
-</body>
-<script src="./scripts.js"></script>
-
+    <div class="content"></div>
+  </body>
+  <script src="./scripts.js"></script>
 </html>
